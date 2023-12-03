@@ -1,0 +1,339 @@
+@import url("fonts.css");
+@import url("reset.css");
+/*---------Основні стилі---------------*/
+body{
+    font-family: Inter;
+    font-size: 24px;
+
+}
+[class*="__container"] {
+	max-width: 1030px;
+	margin: 0 auto;
+    padding: 0 15px;
+}
+.wrapper{
+    min-height: 100%;
+	overflow: clip;
+
+}
+
+.wrapper{
+    background: url("../img/grafity.png") no-repeat;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/*----------------СAR---------------*/
+.car-page {
+padding-top: 420px;
+
+}
+
+
+.car-body {
+    position: relative;
+    display: inline-block;
+}
+.car-roof{
+	width: 497px;
+    margin-left: 300px;
+	border-bottom: 65px solid rgb(0, 0, 0);
+	border-radius: 100% 100% 0 0;
+    border-left: 110px solid transparent;
+    border-right: 100px solid transparent;
+}
+.car-carcas {
+    width: 1000px;
+    height: 30px;
+    border-bottom: 155px solid rgb(0, 0, 0);
+    border-radius: 90% 90% 0 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    margin-top: -15px;
+}
+.car-carcas img{
+    position: absolute;
+    top: 80px;
+    left: 650px;
+    width: 120px;
+    height: 70px;
+}
+.car-window__right {
+    position: absolute;
+    top: -16px;
+    left: 295px;
+    width: 250px;
+    height: 75px;
+    border-bottom: 50px solid rgb(85, 85, 87);
+    border-left: 100px solid transparent;
+    border-radius: 100% 0 0 0;
+    
+}
+.door-left{
+    position: absolute;
+    top: 70px;
+    left: 295px;
+    width: 250px;
+    height: 115px;
+    border-bottom: 120px solid rgb(0, 0, 0);
+    border: 4px solid rgb(91, 89, 89);
+    border-radius: 20% 20% 0 0  ;
+}
+
+.door-item{
+    position: absolute;
+    top: 100px;
+    left: 480px;
+    width: 45px;
+    height: 15px;
+    background-color: #564e4e;
+}
+.car-headlight__left {
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    top: 80px;
+    left: 60px;;
+    border-bottom: 25px solid rgb(255, 251, 1);
+    border-left: 18px solid transparent;
+    border-radius: 20% 0 0 0  ;
+}
+.car-headlight__right {
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    top: 80px;
+    left: 860px;;
+    border-bottom: 25px solid rgb(255, 52, 1);
+    border-right: 18px solid transparent;
+    border-radius: 20% 0 0 0  ;
+}
+.car-wheel__left {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 150px;
+    left: 120px;
+    background: rgb(50,50,51);
+    background: linear-gradient(90deg, rgba(50,50,51,1) 39%, rgba(88,93,97,1) 84%);
+    border-radius: 50%;
+}
+.car-wheel__right {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 150px;
+    left: 770px;
+    background: rgb(50,50,51);
+    background: linear-gradient(90deg, rgba(50,50,51,1) 39%, rgba(88,93,97,1) 84%);
+    border-radius: 50%;
+}
+
+.car-wheel__radius{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgb(50,50,51);
+    background: linear-gradient(90deg, rgba(50,50,51,1) 39%,
+    rgba(88,93,97,1) 84%);
+    border: 3px solid #000000;
+    border-radius: 50%;
+}
+.car-wheel__radius-right{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgb(50,50,51);
+    background: linear-gradient(90deg, rgba(50,50,51,1) 39%,
+    rgba(88,93,97,1) 84%);
+    border: 3px solid #000000;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.wheel-left{
+    position: absolute;
+    top: 52px;
+    left: 53px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.wheel-right{
+    position: absolute;
+    top: 52px;
+    left: 53px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #000000;
+    z-index: 2;
+}
+.car-wheel__right, .car-wheel__left{
+    animation-name: rotate-block;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.car-page{
+    animation-name: car-page;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: translate(1500px)
+}
+.car-text{
+    position: absolute;
+    top: -60px;
+    left: -120px;
+    max-width: 200px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    animation-name: text;
+    opacity: 0;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+.car-text2{
+    position: absolute;
+    top: -60px;
+    left: -120px;
+    max-width: 200px;
+    background-color: #fff;
+    padding: 40px 15px 38px 15px;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    animation-name: subtitle;
+    animation-duration: 10s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+
+}
+@keyframes text{
+    0%{
+        opacity: 0;
+    }
+    10%{
+
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+
+    40%{
+        opacity: 0;
+ 
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+
+    }
+}
+@keyframes subtitle{
+    0%{
+        opacity: 0;
+    }
+    10%{
+
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0;
+ 
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+
+    }
+}
+@keyframes car-page{
+    0%{
+        transform: translate(1500px);
+    }
+
+    20% {
+        transform: translate(0);
+        
+    }
+
+    30% {
+        transform: translate(0);
+    }
+
+    40% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(-1500px);
+    }
+
+    60% {
+        transform: translate(-1500px);
+    }
+
+    70% {
+        transform: translate(0);
+    }
+    80% {
+        transform: translate(0);
+    }
+    90% {
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(-1500px);
+    }
+}
+
+
+@keyframes rotate-block {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
